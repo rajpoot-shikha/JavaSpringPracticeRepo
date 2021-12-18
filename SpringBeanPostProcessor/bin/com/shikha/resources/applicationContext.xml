@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="accBean" class="com.shikha.beans.Account">
+    	<property name="accNumber" value="Account01"/>
+    	<property name="accHolderName" value="Shikha Rajpoot"/>
+    	<property name="accType" value="Joint"/>
+    	<property name="accHolderEmail" value="shikha"/>
+    	<property name="accHolderMobileNo" value="8839197434"/>
+    	<property name="balance" value="1000"/>
+	</bean>
+	
+	<bean id="processor" class="com.shikha.processors.AccountProcessor"/>
+	
+</beans>
